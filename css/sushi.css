@@ -1,0 +1,117 @@
+/* *************** CSS RESET ************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ************** BODY ************* */
+
+body {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+h1{
+    margin: 50px;
+    font-size: 2.625rem;
+}
+/* ********* menus ************* */
+.container{
+    /* display: flex;
+    flex-wrap: nowrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    gap: 10px;
+}
+.box{
+    /* width: 30%; */
+    
+    background-color: #999999 ;
+    float: left;
+    border: 3px solid black;
+    margin: 30px;
+    font-size: 1.3rem; 
+    
+    /* padding-top: 20px;
+    clear: right; */
+}
+.top-right{
+    width: 24%;
+    border-bottom:  3px solid black;
+    border-left:  3px solid black;
+    padding: 3px;
+    position: relative;
+    left:76%;
+    overflow: hidden;
+    font-size:  1.255rem;
+}
+#top-right-of-box-1{
+    background-color: #d69798;
+  
+}
+.content-of-box{
+    padding-top: 4%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#top-right-of-box-2{
+    background-color: #c24543;
+    color: white;
+}
+
+#top-right-of-box-3{
+    background-color: #e5d097;
+      
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+    .container{
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+    .box{
+        margin: 10px;
+    }
+    .top-right{
+        font-size: 1rem;
+    }
+    #box-1{
+        width: 45%;
+    }
+    #box-2{
+        width: 45% ;
+    }
+    #box-3{
+        width: 92%;
+    }
+}
+@media screen and (max-width: 767px)   {
+    .container{
+        display:block;
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+    .top-right{
+        font-size: 1rem;
+    }
+    .box{
+        margin: 10px;
+    }
+}
+
+/* utility */
+.center
+{
+    text-align: center;
+    justify-content: center;
+}
+.bolder{
+    font-family: 'Anton', sans-serif;
+}
